@@ -1,0 +1,13 @@
+% for my $msg (@{alert()}) {
+%   my $icon = $msg->[0] eq 'success' ? 'check'
+%       :      $msg->[0] eq 'info'    ? 'info'
+%       :      $msg->[0] eq 'warning' ? 'warning'
+%       :      $msg->[0] eq 'danger'  ? 'ban'
+%       :                               'bug';
+<div class="alert alert-<%= $msg->[0] %> alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-lg fa-<%= $icon %>" style="top: 0;"></i><%= $msg->[1] %></li>
+  </ul>
+</div>
+% }
