@@ -1,0 +1,11 @@
+Changes
+lib/Mojolicious/Plugin/Alert.pm
+lib/Mojolicious/Plugin/Alert/templates/alert.html.ep
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+test/00-load.t
+test/10-notify.t
+test/manifest.t
+test/pod.t
+test/version.t
